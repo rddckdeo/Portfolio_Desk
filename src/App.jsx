@@ -1,8 +1,15 @@
+import DeskBackground from './components/layouts/DeskBackground'
+import AboutMe from './sections/AboutMe/AboutMe'
+import Hero from './sections/Hero/Hero'
+
 function App() {
   return (
-    <div>
-      Portfolio
-    </div>
+    <>
+      <DeskBackground>
+        <Hero />
+        <AboutMe />
+      </DeskBackground>
+    </>
   )
 }
 
