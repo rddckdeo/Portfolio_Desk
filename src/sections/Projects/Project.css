@@ -1,0 +1,9 @@
+.Project{
+    width: 100%;
+    min-height: 535px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-4);
+}

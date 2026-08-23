@@ -1,0 +1,82 @@
+/* 가로 A4 용지 느낌 */
+.about-me{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.page{
+    padding: var(--space-8) var(--space-4);
+    background-color: var(--color-bg);
+    /* aspect-ratio: 1.414 / 1; 가로:세로 = A4 비율 자동 유지 */
+    margin: var(--space-4);
+
+}
+
+.page-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.picture-area{
+    display: flex;
+    flex-direction: row;
+}
+.picture-area img{
+    margin: 5px;
+}
+.picture-area-2{
+    display: flex;
+    flex-direction: column;
+}
+.introduce-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.introduce-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 500px;
+    margin-top: var(--space-4);
+}
+
+.introduce-line div{
+    position: relative;
+}
+
+.introduce-line small{
+    position: absolute;
+    left: 10px;
+    white-space: nowrap;
+}
+
+.introduce-line-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-width: 500px;
+    margin-top: var(--space-4);
+}
+
+.introduce-line-content div{
+    position: relative;
+}
+
+.introduce-line-content small{
+    position: absolute;
+    left: 10px;
+    white-space: nowrap;
+}

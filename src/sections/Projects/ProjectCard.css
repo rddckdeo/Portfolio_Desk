@@ -1,0 +1,20 @@
+.project-card-container{
+    width: 200px;
+    min-height: 350px;
+    box-shadow: var(--default-box-shadow);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.project-card-header{
+    width: 100%;
+    min-height: 100px;
+    color: #fff;
+    padding: var(--space-2);
+}
+
+.project-card-content{
+    width: 100%;
+    padding: var(--space-2);
+}

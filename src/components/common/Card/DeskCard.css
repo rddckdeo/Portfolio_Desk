@@ -1,0 +1,85 @@
+/* DeskCard.css */
+.desk-card {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--text-subheading-font);
+    font-size: var(--text-subheading-size);
+    font-weight: var(--text-subheading-weight);
+    box-shadow: var(--default-box-shadow);
+}
+
+.desk-card--rotated {
+    transform: rotate(15deg);
+}
+
+/* 가로형 A4 비율 > 1.414 : 1 */
+.about-card{
+    width: 226px;
+    height: 160px;
+
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    z-index: 10;
+}
+
+/* Open Book 비율 > 1.3 ~ 1.5 : 1 */
+.skills-card{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 200px;
+    
+    position: absolute;
+    top: 60px;
+    left: 250px;
+}
+
+.skills-left{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    border-right: 3px solid #E5E5E5;
+}
+
+.skills-right{
+    width: 50%;
+    height: 100%;
+}
+
+.skills-inner{
+    padding: 15px;
+}
+
+/* 길쭉한 팸플릿 (3단 접지형) : 1 : 2.1 */
+.project-card{
+    width: 120px;
+    height: 252px;
+
+    position: absolute;
+    top: 20px;
+    left: 600px;
+}
+
+/* 사원증 비율 : 1 : 1.586 ( ISO 신용카드 표준 규격 ) */
+.career-card{
+    width: 90px;
+    height: 143px;
+
+    position: absolute;
+    top: -30px;
+    left: 700px;
+    z-index: 10;
+}
+
+.experience-card{
+    width: 200px;
+    height: 100px;
+
+    position: absolute;
+    top: 80px;
+    left: 750px;
+}

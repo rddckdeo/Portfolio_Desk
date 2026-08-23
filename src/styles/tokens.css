@@ -10,6 +10,7 @@
     ------------------------------ */
     --color-accent: #1D4ED8;      /* 유일한 포인트 컬러 (deep blue) */
     --color-bg: #FFFFFF;          /* 기본 배경 - 화이트 */
+    --color-bg-page: #FAFAFA;     /* 페이지 전체 배경 (책상 바깥) */
     --color-text-primary: #111111;
     --color-text-secondary: #555555;
     --color-text-muted: #888888;
@@ -26,7 +27,7 @@
      ------------------------------ */
 
   /* 대제목 - Hero, 메인 타이틀 */
-    --text-hero-size: clamp(64px, 6vw, 80px);
+    --text-hero-size: clamp(48px, 6vw, 64px);
     --text-hero-weight: 700;
     --text-hero-font: var(--font-serif);
     --text-hero-line-height: 1.1;
@@ -71,6 +72,8 @@
 
   /* 섹션 간 여백 (120 ~ 160px) */
     --space-section: clamp(120px, 12vw, 160px);
+
+    --default-box-shadow : 0 2px 4px rgba(0,0,0,0.3);
 }
 
 
@@ -113,3 +116,4 @@
     font-weight: var(--text-label-weight);
     line-height: var(--text-label-line-height);
 }
+

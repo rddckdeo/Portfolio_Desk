@@ -1,17 +1,46 @@
-
 .desk-background{
-    min-height: 100vh;
     width: 100%;
-    background-color: #eae9e6;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: var(--space-2);
+    margin-bottom: var(--space-section);
 }
 .desk-background-inner{
+    min-height: clamp(500px, 90vh, 600px);
     width: 100%;
     max-width: 1200px;
     background-color: #f7f6f4;
     border: 1px solid var(--color-border);
     border-radius: 4px;
     position: relative;
+    /* background: linear-gradient(135deg, #FDFCFA 0%, #F5F3EE 100%); 안쪽은 더 밝게 */
+
+    /* 옵션 1 - 살짝 따뜻한 아이보리 (은은한 차이) */
+    /* background: linear-gradient(135deg, #F7F4EE 0%, #F5F3EE 100%); */
+
+    /* 옵션 2 - 크림톤 살짝 더 진하게 */
+    background: linear-gradient(135deg, #F4F0E6 0%,#FAFAFA 50%, #F5F3EE 100%);
+
+    /* 옵션 3 - 베이지 기운 도는 아이보리 */
+    /* background: linear-gradient(135deg, #F2EEE3 0%, #F5F3EE 100%); */
+
+    /* 옵션 4 - 살짝 회갈빛 도는 톤 (에디토리얼 느낌 강조) */
+    /* background: linear-gradient(135deg, #EFEBE0 0%, #F5F3EE 100%); */
+
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.03),
+        0 8px 16px rgba(0, 0, 0, 0.05),
+        0 24px 40px rgba(0, 0, 0, 0.07),
+        0 40px 64px rgba(0, 0, 0, 0.04);
+}
+
+.page-caption {
+    font-weight: var(--text-label-weight);
+    font-family: var(--text-label-font);
+    font-size: var(--text-label-size);
+    line-height: var(--text-label-line-height);
+    color: #6B6B6B;
+    margin-bottom: 16px;
 }
