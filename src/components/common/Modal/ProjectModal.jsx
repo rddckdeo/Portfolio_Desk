@@ -15,12 +15,13 @@ export default function ProjectModal({onClose}){
 
 
     return(
-        <div className='modal-overlay' onClick={onClose}>
+        <div className='modal-overlay'>
+            <div style={{cursor : 'pointer' ,position : 'absolute', top : 0, margin : '10px', left : '90%'}} onClick={onClose}>X</div>
             <div className='modal-container'>
                 <div className={`modal-box-left ${isExpanded ? 'modal-box-expanded-left' : ''}`}>
                     left
                 </div>
-                <div className='modal-box-center'
+                <div className='modal-box-center'   
                     onClick={(e) => e.stopPropagation()}>
                     center
                 </div>
@@ -28,7 +29,6 @@ export default function ProjectModal({onClose}){
                     right
                 </div>
             </div>
-            <div>ss</div>
         </div>
     )
 }

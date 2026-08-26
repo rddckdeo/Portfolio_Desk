@@ -8,6 +8,7 @@
     margin-bottom: var(--space-section);
 }
 .desk-background-inner{
+    display: flex;
     min-height: clamp(500px, 90vh, 600px);
     width: 100%;
     max-width: 1200px;

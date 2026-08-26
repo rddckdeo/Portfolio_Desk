@@ -15,6 +15,7 @@
     --color-text-secondary: #555555;
     --color-text-muted: #888888;
     --color-border: #E5E5E5;
+    --color-label : #6B6B6B;
 
 /* ------------------------------
     Font Family
@@ -74,6 +75,7 @@
     --space-section: clamp(120px, 12vw, 160px);
 
     --default-box-shadow : 0 2px 4px rgba(0,0,0,0.3);
+    --drop-box-shadow : -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -116,4 +118,3 @@
     font-weight: var(--text-label-weight);
     line-height: var(--text-label-line-height);
 }
-

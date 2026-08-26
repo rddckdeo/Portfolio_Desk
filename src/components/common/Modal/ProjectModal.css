@@ -9,14 +9,13 @@
     align-items: center;
     justify-content: center;
     z-index: 100;
-    perspective: 1500px;
-    
 }
 
 .modal-container {
     position: relative;
-    width: 300px;
+    width: 900px;
     height: 500px;
+    perspective: 1500px;
 }
 
 .modal-box-left,
@@ -37,13 +36,14 @@
 }
 
 .modal-box-left{
+    z-index: 5;
     transform-origin: 0% 0%;
     transition: transform 2s ease;
     transform-style: preserve-3d;
 }
 .modal-box-right{
     transform-origin: 100% 100%;
-    transition: transform 4s ease;
+    transition: transform 2s ease;
     transform-style: preserve-3d;
 }
 .modal-box-center{
