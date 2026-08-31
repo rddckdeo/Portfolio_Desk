@@ -7,7 +7,6 @@ export default function CareerCard({company}){
                 <div className='career-card-id'>ID</div>
                 <div className='career-card-holder'></div>
                 <div className='career-card-logo'>
-                    {/* <img src="https://placehold.co/270x125" alt="placeholder"/> */}
                     <img src={company.img} alt="placeholder" className='career-card-logo-img'/>
                 </div>
                 <div className='career-card-header-title'>
