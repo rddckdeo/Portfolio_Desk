@@ -2,7 +2,15 @@ import './BookContent.css'
 
 export function BookCover(){
     return(
-        <div>표지</div>
+        <div className='cover-container'>
+            <div className='cover-ribon'></div>
+            <div className='cover-container-inner'>
+                <div className='cover-content'>
+                    <h1>SKILLS</h1>
+                    <h2>C H A P T E R  T W O</h2>
+                </div>
+            </div>
+        </div>
     )
 }
 

@@ -6,32 +6,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .page{
-    padding: var(--space-8) var(--space-4);
+    width: 100%;
+    max-width: 1200px;
+    padding: var(--space-6) var(--space-4);
     background-color: var(--color-bg);
     /* aspect-ratio: 1.414 / 1; 가로:세로 = A4 비율 자동 유지 */
     margin: var(--space-4);
-
+    box-shadow: var(--default-box-shadow);
 }
-
 .page-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .page-container{
     display: flex;
     flex-direction: row;
     gap: 30px;
+    margin-top: var(--space-4);
+}
+.page-container small{
+    color : var(--color-label);
+    white-space: pre-line;
+    margin-left: var(--space-2);
+    display: block;
+    line-height: 1.8;
 }
 
 .picture-area{
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
+
 }
 .picture-area img{
     margin: 5px;
@@ -43,24 +56,22 @@
 .introduce-area{
     display: flex;
     flex-direction: column;
+    flex: 1;
+
 }
 
 .introduce-line{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3칸을 항상 균등한 너비로 고정 */
+    width: 100%;
+    margin-top: var(--space-2);
+}
+
+.introduce-line h4,
+.introduce-line-content h4 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-width: 500px;
-    margin-top: var(--space-4);
-}
-
-.introduce-line div{
-    position: relative;
-}
-
-.introduce-line small{
-    position: absolute;
-    left: 10px;
-    white-space: nowrap;
+    align-items: center;
+    gap: 6px;
 }
 
 .introduce-line-content{
@@ -71,12 +82,8 @@
     margin-top: var(--space-4);
 }
 
-.introduce-line-content div{
-    position: relative;
-}
-
 .introduce-line-content small{
-    position: absolute;
-    left: 10px;
-    white-space: nowrap;
+    color: var(--color-label);
+    display: block;
+    line-height: 2;
 }
