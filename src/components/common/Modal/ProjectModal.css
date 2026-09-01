@@ -4,11 +4,28 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 100;
+}
+.modal-close{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    left: 90%;
+}
+
+.modal-closeBtn{
+    width: 35px;
+    margin: var(--space-2);
+}
+
+.modal-icons{
+    width: 35px;
+    cursor: pointer;
+    margin: var(--space-2);
 }
 
 .modal-container {
@@ -47,8 +64,6 @@
     transform-style: preserve-3d;
 }
 .modal-box-center{
-    background-color: #1E2128;
-    color: #fff;
     position: relative;
 }
 

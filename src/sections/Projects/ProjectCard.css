@@ -15,14 +15,25 @@
 
 .project-card-header{
     width: 100%;
-    min-height: 100px;
+    min-height: 200px;
     color: #fff;
     padding: var(--space-2);
+    font-family: var(--font-serif);
 }
 
 .project-card-content{
     width: 100%;
+    min-height: 250px;
     padding: var(--space-2);
     background-color: #fff;
     flex: 1;
+    white-space : pre-line;
+}
+
+.project-card-content small{
+    font-size: 12px;
+    color: var(--color-label);
+}
+.project-card-content-box{
+    margin: var(--space-2) auto;
 }
