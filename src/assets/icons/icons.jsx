@@ -43,6 +43,15 @@ export function EmailIcon({ size = 20 }) {
     )
 }
 
+export function EmailIcon2({ size = 20 }) {
+    return (
+        <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="#6B6B6B" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="M3 6.5l9 6.5 9-6.5" />
+        </svg>
+    )
+}
+
 export function EducationIcon({ size = 20 }) {
     return (
         <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="#111" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">

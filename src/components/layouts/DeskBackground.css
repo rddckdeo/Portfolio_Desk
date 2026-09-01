@@ -10,7 +10,7 @@
 }
 .desk-background-inner{
     display: flex;
-    min-height: clamp(300px, 80vh, 800px);
+    height: clamp(300px, 80vh, 800px);
     width: 100%;
     background-color: #f7f6f4;
     border: 1px solid var(--color-border);

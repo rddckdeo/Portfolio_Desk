@@ -83,3 +83,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media(max-width : 1650px){
+    .career-card-container{
+        min-height: auto;
+    }
+    .non-select-career,
+    .select-career{
+        padding: var(--space-1);
+        margin: var(--space-1);
+    }
+    .career-card-logo{
+        height: 100px;
+    }
+    .career-card-logo-img{
+        width: 200px;
+    }
+}
