@@ -19,6 +19,10 @@ import levup4 from '../../assets/images/projects/Levup/levup4.png'
 import levup5 from '../../assets/images/projects/Levup/levup5.png'
 
 import DeskPortfolio1 from '../../assets/images/projects/Portfolio/deskPortfolio1.png'
+import DeskPortfolio3 from '../../assets/images/projects/Portfolio/deskPortfolio3.png'
+import DeskPortfolio4 from '../../assets/images/projects/Portfolio/deskPortfolio4.png'
+import DeskPortfolio5 from '../../assets/images/projects/Portfolio/deskPortfolio5.png'
+import DeskPortfolio6 from '../../assets/images/projects/Portfolio/deskPortfolio6.png'
 
 export const projectDetails = [
     { // Haru
@@ -94,7 +98,7 @@ export const projectDetails = [
         content: "책상 위에 놓인 문서, 책, 사원증 등의 오브젝트로 자기소개를 표현한 인터랙티브 포트폴리오입니다.\nCSS 3D transform을 활용하여 다양한 3D 애니메이션 효과를 구현하였으며, 일반적인 자기 소개가 아닌 책상과 연관된 오브젝트로 저를 하나씩 표현하기 위한 포트폴리오입니다.",
         periodAndTeam: "개인 프로젝트",
         github: "https://github.com/rddckdeo/Portfolio_Desk",
-        picture: [ DeskPortfolio1 ],
+        picture: [ DeskPortfolio1 ,DeskPortfolio3, DeskPortfolio4, DeskPortfolio5, DeskPortfolio6],
         skills: [
             "React", "JavaScript", "CSS"
         ],

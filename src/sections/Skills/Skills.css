@@ -10,15 +10,15 @@
 
 .book {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: clamp(320px, 32vw, 500px);
+    height: clamp(480px, 48vw, 600px);
     perspective: 1500px;
 
     transition: transform 0.6s ease;
 }
 
 .book-open{
-    transform: translateX(200px);
+    transform: translateX(clamp(150px, 32vw, 250px));
 }
 
 .bookPage{
