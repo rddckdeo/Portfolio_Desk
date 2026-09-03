@@ -18,11 +18,11 @@ import levup3 from '../../assets/images/projects/Levup/levup3.png'
 import levup4 from '../../assets/images/projects/Levup/levup4.png'
 import levup5 from '../../assets/images/projects/Levup/levup5.png'
 
-import DeskPortfolio1 from '../../assets/images/projects/Portfolio/deskPortfolio1.png'
-import DeskPortfolio3 from '../../assets/images/projects/Portfolio/deskPortfolio3.png'
-import DeskPortfolio4 from '../../assets/images/projects/Portfolio/deskPortfolio4.png'
-import DeskPortfolio5 from '../../assets/images/projects/Portfolio/deskPortfolio5.png'
-import DeskPortfolio6 from '../../assets/images/projects/Portfolio/deskPortfolio6.png'
+import DeskPortfolio1 from '../../assets/images/projects/portfolio/deskPortfolio1.png'
+import DeskPortfolio3 from '../../assets/images/projects/portfolio/deskPortfolio3.png'
+import DeskPortfolio4 from '../../assets/images/projects/portfolio/deskPortfolio4.png'
+import DeskPortfolio5 from '../../assets/images/projects/portfolio/deskPortfolio5.png'
+import DeskPortfolio6 from '../../assets/images/projects/portfolio/deskPortfolio6.png'
 
 export const projectDetails = [
     { // Haru
