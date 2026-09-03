@@ -12,6 +12,13 @@ import CoCo4 from '../../assets/images/projects/CoCo/CoCo4.png'
 import CoCo5 from '../../assets/images/projects/CoCo/CoCo5.png'
 import CoCo6 from '../../assets/images/projects/CoCo/CoCo6.png'
 
+import levup1 from '../../assets/images/projects/Levup/levup1.png'
+import levup2 from '../../assets/images/projects/Levup/levup2.png'
+import levup3 from '../../assets/images/projects/Levup/levup3.png'
+import levup4 from '../../assets/images/projects/Levup/levup4.png'
+import levup5 from '../../assets/images/projects/Levup/levup5.png'
+
+import DeskPortfolio1 from '../../assets/images/projects/Portfolio/deskPortfolio1.png'
 
 export const projectDetails = [
     { // Haru
@@ -33,7 +40,8 @@ export const projectDetails = [
             "게시판 검색 기능 추가",
             "비밀글 기능 및 카테고리 설정",
             "발표 PPT 디자인 및 제작"
-        ]
+        ],
+        color : "#D69240"
     },
     {// CoCo
         title : "Collaboration Code (CoCo)",
@@ -55,64 +63,51 @@ export const projectDetails = [
             "게시판 댓글 및 답변 기능 추가,",
             "My Page 기능 전담 (내 프로젝트 조회 및 관리 등 기능 구현)",
             "알림 기능 추가 - 프로젝트에 댓글 및 답변, 상태에 따른 실시간 알림 기능 추가"
-        ]
-    },
-    { // TravelPlan
-        title : "",
-        subTitle: "",
-        content: "",
-        periodAndTeam: "",
-        github: "",
-        picture: [
-            ""
         ],
-        skills: [
-
-        ],
-        Tools: [
-
-        ],
-        roles: [
-
-        ]
+        color : "#C7345B"
     },
     { // Levup
-        title : "",
-        subTitle: "",
-        content: "",
-        periodAndTeam: "",
-        github: "",
-        picture: [
-            ""
-        ],
+        title : "Levup",
+        subTitle: "일상의 목표를 게임처럼 달성하는 성장 기록 플랫폼",
+        content: "게임이 주는 성취감을 현실의 성장에서 느낄 수 있도록 만든 개인 프로젝트입니다.\n일상의 목표를 업적처럼 등록하고 달성률을 확인할 수 있으며, 5단계 검증 시스템으로 신뢰도를 관리합니다.",        periodAndTeam: "개인 프로젝트",
+        github: "https://github.com/rddckdeo/levup_front",
+        picture: [ levup1, levup2, levup3, levup4, levup5],
         skills: [
-
+            "Java", "Spring Boot", "JWT", "JPA", "Spring Security", "React", "TypeScript", "MySQL", "Tailwind CSS"
         ],
-        Tools: [
-
+        tools: [
+            "STS4", "DBeaver", "VSCode", "Google Sheet(QA)", "Postman"
         ],
         roles: [
-
-        ]
+            "JWT 기반 회원가입/로그인 인증 시스템 구현",
+            "업적 생성, 조회, 수정, 삭제(CRUD) 및 세부 항목 관리 기능 구현",
+            "메서드 체이닝 및 빌더 패턴 등 새로운 코드 작성 방식을 학습하며 적용",
+            "카테고리 및 태그 시스템 설계",
+            "전 기능에 대한 QA 시트 작성 및 셀프 테스트를 통한 버그 발견·개선",
+            "타입 안정성과 적용 경험을 고려한 TypeScript 코드 작성"
+        ],
+        color : "#1D4ED8"
     },
     { // Desk-Portfolio
-        title : "",
-        subTitle: "",
-        content: "",
-        periodAndTeam: "",
-        github: "",
-        picture: [
-            ""
-        ],
+        title : "Desk-Portfolio",
+        subTitle: "책상 위 오브젝트로 표현한 개인 포트폴리오",
+        content: "책상 위에 놓인 문서, 책, 사원증 등의 오브젝트로 자기소개를 표현한 인터랙티브 포트폴리오입니다.\nCSS 3D transform을 활용하여 다양한 3D 애니메이션 효과를 구현하였으며, 일반적인 자기 소개가 아닌 책상과 연관된 오브젝트로 저를 하나씩 표현하기 위한 포트폴리오입니다.",
+        periodAndTeam: "개인 프로젝트",
+        github: "https://github.com/rddckdeo/Portfolio_Desk",
+        picture: [ DeskPortfolio1 ],
         skills: [
-
+            "React", "JavaScript", "CSS"
         ],
-        Tools: [
-
+        tools: [
+            "GitHub", "VSCode", "Figma", "Vercel"
         ],
         roles: [
-
-        ]
+            "Figma를 사용한 전체 UI/UX 기획 및 디자인",
+            "CSS 3D transform을 활용한 책 페이지 넘김 애니메이션 구현",
+            "반응형 레이아웃 설계 (Flexbox, clamp, 미디어 쿼리)",
+            "Vervel을 통한 배포 및 CI/CD 자동화"
+        ],
+        color : "#1E7F4F"
     },
 ]
 

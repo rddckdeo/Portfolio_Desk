@@ -1,4 +1,3 @@
-/* DeskCard.css */
 .desk-card {
     background: #fff;
     border: 1px solid var(--color-border);
@@ -9,6 +8,9 @@
     font-size: var(--text-subheading-size);
     font-weight: var(--text-subheading-weight);
     box-shadow: var(--default-box-shadow);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .desk-card--rotated {
@@ -17,13 +19,20 @@
 
 /* 가로형 A4 비율 > 1.414 : 1 */
 .about-card{
-    width: 226px;
-    height: 160px;
-
+    width: 400px;
+    height: 200px;
     position: absolute;
     top: 20px;
-    left: 100px;
+    left: 0%;        /* 0px → 0% (사실상 동일하지만 통일성 위해) */
     z-index: 10;
+    overflow: hidden;
+    padding: 0;
+}
+.about-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Open Book 비율 > 1.3 ~ 1.5 : 1 */
@@ -32,10 +41,9 @@
     flex-direction: row;
     width: 300px;
     height: 200px;
-    
     position: absolute;
     top: 60px;
-    left: 250px;
+    left: 33%;       /* 250px → 25% (부모 1000px 기준) */
 }
 
 .skills-left{
@@ -56,30 +64,51 @@
 
 /* 길쭉한 팸플릿 (3단 접지형) : 1 : 2.1 */
 .project-card{
-    width: 120px;
-    height: 252px;
-
+    width: 160px;
+    height: 280px;
     position: absolute;
-    top: 20px;
-    left: 600px;
+    top: -20px;
+    left: 60%;       /* 600px → 60% */
+    overflow: hidden;
+    padding: 0;
+}
+.project-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-/* 사원증 비율 : 1 : 1.586 ( ISO 신용카드 표준 규격 ) */
+/* 사원증 비율 : 1 : 1.586 */
 .career-card{
-    width: 90px;
-    height: 143px;
-
+    width: 110px;
+    height: 160px;
     position: absolute;
     top: -30px;
-    left: 700px;
+    left: 70%;       /* 700px → 70% */
     z-index: 10;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 10px;
+}
+    
+.career-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .experience-card{
-    width: 200px;
-    height: 100px;
-
+    width: 320px;
+    height: 200px;
     position: absolute;
     top: 80px;
-    left: 750px;
+    left: 75%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.experience-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }

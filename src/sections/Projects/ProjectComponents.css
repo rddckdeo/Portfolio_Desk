@@ -4,9 +4,32 @@
     height: 100%;
     backface-visibility: hidden;
     overflow-y: auto;
+    overflow-x: hidden;
+    padding: var(--space-2);
 }
 
-.project-modal-front {}
+.project-modal-front {
+    width: 100%;
+    padding: 0;
+}
+
+.project-modal-front-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.project-modal-front-card-header {
+    width: 100%;
+    min-height: 400px;
+    color: #fff;
+    font-family: var(--font-serif);
+}
+
+.project-modal-front-card-header p {
+    padding: var(--space-3);
+    font-size: var(--text-heading-size);
+}
 
 .project-modal-back {
     transform: rotateY(180deg);
@@ -16,7 +39,7 @@
 /* Left - Description */
 /* ================================= */
 .project-modal-left-content {
-    padding: var(--space-4) var(--space-3);
+    padding: var(--space-2) var(--space-2);
     display: flex;
     flex-direction: column;
 }
@@ -26,8 +49,12 @@
     margin-bottom: var(--space-1);
 }
 
+.project-modal-label-subTitle {
+    font-size: 18px;
+}
+
 .project-modal-body {
-    line-height: 1.8;
+    line-height: 2;
     color: var(--color-text-secondary);
     margin-bottom: var(--space-4);
 }
@@ -35,11 +62,11 @@
 .project-modal-divider {
     border: none;
     border-top: 1px solid #ddd;
-    margin: var(--space-3) 0;
+    margin: var(--space-1) 0;
 }
 
 .project-modal-info-row {
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-2);
 }
 
 .project-modal-info-title {
@@ -52,7 +79,6 @@
 }
 
 .project-modal-link {
-    color: var(--color-accent);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -77,6 +103,7 @@
 
 .project-modal-center-title {
     font-family: var(--text-heading-font);
+    font-weight: var(--text-heading-weight);
     font-size: 26px;
     text-align: center;
     margin-bottom: var(--space-2);
@@ -85,37 +112,94 @@
 .project-modal-center-image {
     width: 100%;
     flex: 1;
-    background-color: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #999;
 }
 
+.project-modal-center-image img {
+    width: 90%;
+    box-shadow: var(--drop-box-shadow);
+}
+
+.fade-image {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /* ================================= */
 /* Right - Tech Skills */
 /* ================================= */
 .project-modal-right-content {
-    padding: var(--space-4) var(--space-3);
+    padding: var(--space-2);
     display: flex;
     flex-direction: column;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    left: 85%;
+}
+
+.modal-closeBtn {
+    width: 35px;
+    margin: var(--space-2);
 }
 
 .project-modal-tag-group {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-1);
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-1);
+}
+
+.project-modal-tag-group-role {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin-bottom: var(--space-1);
 }
 
 .project-modal-role {
     margin-top: var(--space-2);
 }
 
-.project-modal-tag{
+.project-modal-role-title {
+    font-size: 26px !important;
+    margin-bottom: var(--space-2);
+}
+
+.project-modal-tag {
     padding: var(--space-1) var(--space-2);
-    background-color: #1a2332;
     color: #fff;
     border-radius: 20px;
     font-size: 13px;
+}
+
+.project-modal-tag-role {
+    font-size: var(--space-2);
+    position: relative;
+    padding-left: var(--space-2);
+    /* 이 값이 충분한지 확인 */
+}
+
+.project-modal-tag-role::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    font-size: 6px;
+    top: 8px;
+    color: var(--color-label);
 }

@@ -1,6 +1,11 @@
 // components/common/DeskCard/DeskCard.jsx
 import './DeskCard.css'
 
+import AboutImg from '../../../assets/images/hero/deskPortfolio1-1.png'
+import ProjectImg from '../../../assets/images/hero/deskPortfolio3-1.png'
+import CareerImg from '../../../assets/images/hero/deskPortfolio4-1.png'
+import ExperienceImg from '../../../assets/images/hero/deskPortfolio5-1.png'
+
 export function DeskCard({ label, style, className = '' }) {
     return (
         <div className={`desk-card ${className}`} style={style}>
@@ -12,8 +17,7 @@ export function DeskCard({ label, style, className = '' }) {
 export function AboutCard(){
     return(
         <div className='desk-card about-card'>
-            <p className='text-label'>About Me</p>
-
+            <img src={AboutImg} alt='ss' />
         </div>
     )
 }
@@ -38,7 +42,7 @@ export function SkillsCard(){
 export function ProjectCard(){
     return(
         <div className='desk-card project-card'>
-            <p className='text-label'>Project</p>
+            <img src={ProjectImg} alt="" />
         </div>
     )
 }
@@ -46,7 +50,7 @@ export function ProjectCard(){
 export function CareerCard(){
     return(
         <div className='desk-card desk-card--rotated career-card'>
-            <p className='text-label'>Carrer</p>
+            <img src={CareerImg}/>
         </div>
     )
 }
@@ -54,7 +58,7 @@ export function CareerCard(){
 export function ExperienceCard(){
     return(
         <div className='desk-card experience-card'>
-            <p className='text-label'>Experience</p>
+            <img src={ExperienceImg}/>
         </div>
     )
 }

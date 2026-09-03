@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react'
 import './ProjectModal.css'
-import Left from '../../../assets/icons/left.png'
-import Right from '../../../assets/icons/right.png'
-import Close from '../../../assets/icons/close.png'
 import { ProjectComponentsCenter, ProjectComponentsLeft, ProjectComponentsRight } from '../../../sections/Projects/ProjectComponents'
 import { projectDetails } from '../../../sections/Projects/projectDetails'
 
@@ -30,21 +27,15 @@ export default function ProjectModal({ selectedProject, onClose }) {
             return projectDetails[0]
         } else if (selectedProject === "CoCo-FinalProject") {
             return projectDetails[1]
-        } else if (selectedProject === "TravelPlan") {
+        }else if (selectedProject === "Levup") {
             return projectDetails[2]
-        } else if (selectedProject === "Levup") {
-            return projectDetails[3]
         } else if (selectedProject === "Portfolio") {
-            return projectDetails[4]
+            return projectDetails[3]
         }
     }
 
     return (
         <div className='modal-overlay'>
-            <img className='modal-icons' src={Left} alt='' />
-            <div className='modal-close' onClick={onClose}>
-                <img className='modal-closeBtn' src={Close} alt='' />
-            </div>
             <div className='modal-container'>
                 <div className={`modal-box-left ${isExpanded ? 'modal-box-expanded-left' : ''}`}>
                     <ProjectComponentsLeft projectDetails = {transferPorject()}/>
@@ -54,10 +45,9 @@ export default function ProjectModal({ selectedProject, onClose }) {
                     <ProjectComponentsCenter projectDetails = {transferPorject()}/>
                 </div>
                 <div className={`modal-box-right ${isExpanded ? 'modal-box-expanded-right' : ''}`}>
-                    <ProjectComponentsRight projectDetails = {transferPorject()}/>
+                    <ProjectComponentsRight projectDetails = {transferPorject()} onClose = {onClose}/>
                 </div>
             </div>
-            <img className='modal-icons' src={Right} alt='' />
         </div>
     )
 }
