@@ -39,7 +39,7 @@
 .skills-card{
     display: flex;
     flex-direction: row;
-    width: 300px;
+    width: 350px;
     height: 200px;
     position: absolute;
     top: 60px;
@@ -50,7 +50,14 @@
     display: flex;
     width: 50%;
     height: 100%;
-    border-right: 3px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    
+}
+
+.skills-left img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .skills-right{
@@ -58,9 +65,12 @@
     height: 100%;
 }
 
-.skills-inner{
-    padding: 15px;
+.skills-right img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
+
 
 /* 길쭉한 팸플릿 (3단 접지형) : 1 : 2.1 */
 .project-card{

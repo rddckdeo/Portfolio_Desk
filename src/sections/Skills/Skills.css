@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: var(--space-4);
+    position: relative;
 }
 
 .book {
@@ -59,29 +60,36 @@
     background-color: #fff;
 }
 
-
-.page-edge {
-    position: absolute;
-    top: 0;
-    width: 30px; /* 클릭 가능한 영역 너비 - 필요하면 조정 */
-    height: 100%;
-    cursor: pointer;
-    z-index: 5;
-}
-
-.page-edge--left {
-    left: 0;
-}
-
-.page-edge--right {
-    right: 0;
-}
-
-/* 참고용 - 실제 적용 시엔 지워도 됨, 클릭 영역 확인용 */
-.page-edge:hover {
-    background: rgba(0, 0, 0, 0.03);
-}
-
 .flipped{
     transform: rotateY(-180deg);
+}
+
+.prevBtn,
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid #111;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+    background: #f2f2f2;
+}
+
+.prevBtn {
+    left: clamp(8px, 4vw, 40px);
+}
+
+.nextBtn {
+    right: clamp(8px, 4vw, 40px);
 }

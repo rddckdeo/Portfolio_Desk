@@ -2,6 +2,8 @@
 import './DeskCard.css'
 
 import AboutImg from '../../../assets/images/hero/deskPortfolio1-1.png'
+import SkillImg1 from '../../../assets/images/hero/deskPortfolio2-1.png'
+import SkillImg2 from '../../../assets/images/hero/deskPortfolio2-2.png'
 import ProjectImg from '../../../assets/images/hero/deskPortfolio3-1.png'
 import CareerImg from '../../../assets/images/hero/deskPortfolio4-1.png'
 import ExperienceImg from '../../../assets/images/hero/deskPortfolio5-1.png'
@@ -17,7 +19,7 @@ export function DeskCard({ label, style, className = '' }) {
 export function AboutCard(){
     return(
         <div className='desk-card about-card'>
-            <img src={AboutImg} alt='ss' />
+            <img src={AboutImg} alt='' />
         </div>
     )
 }
@@ -27,12 +29,12 @@ export function SkillsCard(){
         <div className='desk-card skills-card'>
             <div className='skills-left'>
                 <div className='skills-inner'>
-                    <p className='text-label'>Skills</p>
+                    <img src={SkillImg1} alt='' />
                 </div>
             </div>
             <div className='skills-right'>
                 <div className='skills-inner'>
-                    <p className='text-label'>right</p>
+                    <img src={SkillImg2} alt='' />
                 </div>
             </div>
         </div>
