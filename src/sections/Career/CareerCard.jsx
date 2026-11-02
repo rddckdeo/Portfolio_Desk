@@ -28,7 +28,7 @@ export default function CareerCard({company}){
                     <div style={{color : 'var(--color-label)'}}>담당 업무</div>
                     <div style={{fontSize : '15px', whiteSpace : 'pre-line'}}>{company.work}</div>
                 </div>
-                <div className='career-card-footer' style={{color : 'var(--color-label)'}} >클릭하면 상세 업무 내용이 펼처집니다.</div>
+                {/* <div className='career-card-footer' style={{color : 'var(--color-label)'}} >클릭하면 상세 업무 내용이 펼처집니다.</div> */}
             </div>
         </div>
     )

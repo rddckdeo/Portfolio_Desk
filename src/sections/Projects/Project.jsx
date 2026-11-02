@@ -11,7 +11,7 @@ export default function Project() {
     const projectIntro = [
         {color : "#D69240", title : "Haru : Semi-Project", subTitle : "가상의 호텔을 소개하는 예약 플랫폼", team : "5인(백엔드 3명, 프론트 2명)", Skills : "JAVA, JSP, HTML, CSS, JS, ORACLE"},
         {color : "#C7345B", title : "CoCo : Final-Project", subTitle : "개발자 협업을 위한 원스톱 프로젝트 관리 플랫폼", team : "3인(Full 3명)", Skills : "JAVA, Spring, JSP, MyBatis, HTML, CSS, JS, ORACLE"},
-        {color : "#1D4ED8", title : "Levup", subTitle : "일상의 목표를 게임처럼 달성하는 성장 기록 플랫폼", team : "개인 프로젝트", Skills : "React, JAVA, Spring boot, TypeScript, JPA, MySQL, MySQL, tailwind CSS"},
+        {color : "#1D4ED8", title : "Levup", subTitle : "일상의 목표를 게임처럼 달성하는 성장 기록 플랫폼", team : "개인 프로젝트", Skills : "React, JAVA, Spring boot, TypeScript, JPA, MySQL, tailwind CSS"},
         {color : "#1E7F4F", title : "Desk-Portfolio", subTitle : "책상 위 오브젝트로 표현한 포트폴리오", team : "개인 프로젝트", Skills : "React, JS, Vercel, Figma"}
     ]
 

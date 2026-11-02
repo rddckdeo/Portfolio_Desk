@@ -84,7 +84,7 @@ export function TableOfContents(){
             <p className='toc-title'>Skills</p>
             <p className='toc-quote'>
                 "개발에서 중요한 것은 기술을 사용하는 것보다<br/>
-                왜 그 기술을 사용해야하는지 이해하는 것을<br/>
+                왜 그 기술을 사용해야하는지 이해하는 것이<br/>
                 더 중요하다고 생각합니다."
             </p>
             <div className='toc-stack-box'>
