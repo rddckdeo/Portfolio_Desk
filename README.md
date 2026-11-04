@@ -1,16 +1,32 @@
-# React + Vite
+# Desk Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+책상 위 문서를 콘셉트로 만든 개인 포트폴리오 웹사이트입니다.
 
-Currently, two official plugins are available:
+- 배포 주소: [배포 주소 입력]
+- 개발 기간: 2026.08 ~ 2026.11
+- 개발 인원: 1명
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 기술 스택
 
-## React Compiler
+React 19, Vite, JavaScript, CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 주요 기능
 
-## Expanding the ESLint configuration
+- 경력, 기술, 프로젝트를 카드와 문서 형태로 표현
+- 책장을 넘기는 형태의 기술 소개
+- 카드 뒤집기와 프로젝트 상세 모달
+- ESC 키와 바깥 영역 클릭으로 모달 닫기
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 구현 포인트
+
+- 외부 UI·애니메이션 라이브러리 없이 React와 CSS로 인터랙션 구현
+- CSS `perspective`, `rotateY`로 3D 효과 구현
+- 프로젝트 내용을 `projectDetails.js`로 분리해 화면 코드와 데이터 관리 구분
+- Button, Card, Modal을 공통 컴포넌트로 분리
+
+## 실행 방법
+
+```bash
+npm install
+npm run dev
+```
